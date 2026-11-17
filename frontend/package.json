@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "oxlint",
     "preview": "vite preview",
-    "test": "node --test src/",
+    "test": "node --test \"src/**/*.test.js\"",
     "especificaciones": "node scripts/generar-especificaciones.mjs",
     "datos:demo": "node scripts/usar-datos-demo.mjs"
   },

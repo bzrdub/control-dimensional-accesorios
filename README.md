@@ -10,6 +10,7 @@ trazabilidad de cada medición y un flujo de trabajo pensado para la planta.
 > propiedad de la empresa y **no forman parte de este repositorio**. El proyecto incluye un set de
 > **datos DEMO ficticios** (`frontend/datos-demo/`) para poder ejecutarlo y evaluarlo.
 
+[![CI](https://github.com/bzrdub/control-dimensional-accesorios/actions/workflows/ci.yml/badge.svg)](https://github.com/bzrdub/control-dimensional-accesorios/actions/workflows/ci.yml)
 ![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)
 ![Django](https://img.shields.io/badge/Django-5.2-092E20?logo=django&logoColor=white)
 ![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)
@@ -17,10 +18,29 @@ trazabilidad de cada medición y un flujo de trabajo pensado para la planta.
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwindcss&logoColor=white)
 ![SQL Server](https://img.shields.io/badge/SQL_Server-producción-CC2927?logo=microsoftsqlserver&logoColor=white)
 
+
+## Capturas
+
+> Capturas tomadas con los datos DEMO ficticios del repositorio.
+
+**Evaluación dimensional en vivo** — cada medida se valida al escribirla; las que quedan fuera de
+tolerancia se marcan en rojo con el rango permitido y la desviación.
+
+![Ingreso de mediciones con validación en vivo](docs/capturas/ingreso.png)
+
+**Registro global** — etiqueta del accesorio, ensayo PHI, inspección visual y estado de aprobación.
+
+![Registro global de accesorios](docs/capturas/registro.png)
+
+**Mediciones por accesorio** — columnas agrupadas por extremo, con las cotas fuera de rango resaltadas.
+
+![Mediciones por accesorio](docs/capturas/mediciones.png)
+
 ---
 
 ## Contenido
 
+- [Capturas](#capturas)
 - [Funcionalidades](#funcionalidades)
 - [Arquitectura](#arquitectura)
 - [Validación normativa en el servidor](#validación-normativa-en-el-servidor)
@@ -127,7 +147,7 @@ límite: una cota no se da por conforme si no hay contra qué compararla.
 
 ## Puesta en marcha
 
-Requisitos: **Python 3.12+**, **Node.js 20+** y Git.
+Requisitos: **Python 3.12+**, **Node.js 22+** y Git.
 
 ```bash
 git clone https://github.com/bzrdub/control-dimensional-accesorios.git
