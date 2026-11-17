@@ -1,0 +1,28 @@
+{
+  "_descripcion": "Casos de validación compartidos: los ejecutan frontend/src/domain/validacion.test.js y backend/ensayos/tests/test_validacion.py. Si ambos pasan, JS y Python dan el mismo veredicto.",
+  "cotas": [
+    { "nombre": "límite inferior inclusivo", "cota": { "codigo": "D1", "min": 63, "max": 63.6 }, "valor": 63, "esperado": { "estado": "CONFORME", "desviacion": 0, "valor": 63 } },
+    { "nombre": "límite superior inclusivo", "cota": { "codigo": "D1", "min": 63, "max": 63.6 }, "valor": 63.6, "esperado": { "estado": "CONFORME", "desviacion": 0 } },
+    { "nombre": "sobre el máximo", "cota": { "codigo": "D1", "min": 63, "max": 63.6 }, "valor": 63.8, "esperado": { "estado": "NO_CONFORME", "desviacion": 0.2 } },
+    { "nombre": "bajo el mínimo", "cota": { "codigo": "D1", "min": 63, "max": 63.6 }, "valor": 62.9, "esperado": { "estado": "NO_CONFORME", "desviacion": -0.1 } },
+    { "nombre": "valor como texto numérico", "cota": { "codigo": "D1", "min": 63, "max": 63.6 }, "valor": "63.2", "esperado": { "estado": "CONFORME", "desviacion": 0, "valor": 63.2 } },
+    { "nombre": "sin valor (null)", "cota": { "codigo": "D1", "min": 63, "max": 63.6 }, "valor": null, "esperado": { "estado": "SIN_DATO", "desviacion": null, "valor": null } },
+    { "nombre": "sin valor (texto vacío)", "cota": { "codigo": "D1", "min": 63, "max": 63.6 }, "valor": "", "esperado": { "estado": "SIN_DATO", "desviacion": null } },
+    { "nombre": "texto no numérico", "cota": { "codigo": "D1", "min": 63, "max": 63.6 }, "valor": "abc", "esperado": { "estado": "SIN_DATO", "desviacion": null, "valor": null } },
+    { "nombre": "solo mínimo", "cota": { "codigo": "e", "min": 5, "max": null }, "valor": 4.5, "esperado": { "estado": "NO_CONFORME", "desviacion": -0.5 } },
+    { "nombre": "solo máximo", "cota": { "codigo": "ov", "min": null, "max": 1.2 }, "valor": 1.5, "esperado": { "estado": "NO_CONFORME", "desviacion": 0.3 } },
+    { "nombre": "sin límites en la tabla", "cota": { "codigo": "L1", "min": null, "max": null }, "valor": 10, "esperado": { "estado": "SIN_TOLERANCIA", "desviacion": null, "valor": 10 } },
+    { "nombre": "solo registro con nominal", "cota": { "codigo": "L2", "registro": true, "nominal": 40, "min": null, "max": null }, "valor": 40.25, "esperado": { "estado": "REGISTRO", "desviacion": 0.25 } },
+    { "nombre": "solo registro sin nominal", "cota": { "codigo": "L2", "registro": true, "nominal": null, "min": null, "max": null }, "valor": 40, "esperado": { "estado": "REGISTRO", "desviacion": null } },
+    { "nombre": "solo registro sin valor", "cota": { "codigo": "L2", "registro": true, "nominal": 40, "min": null, "max": null }, "valor": null, "esperado": { "estado": "REGISTRO", "desviacion": null } },
+    { "nombre": "redondeo de empate positivo (como toFixed)", "cota": { "codigo": "D1", "min": 0, "max": 63 }, "valor": 63.03125, "esperado": { "estado": "NO_CONFORME", "desviacion": 0.0313 } },
+    { "nombre": "redondeo de empate negativo (como toFixed)", "cota": { "codigo": "D1", "min": 63, "max": 70 }, "valor": 62.96875, "esperado": { "estado": "NO_CONFORME", "desviacion": -0.0313 } }
+  ],
+  "especificaciones": [
+    { "nombre": "todas conformes", "cotas": [{ "codigo": "a", "min": 0, "max": 10 }, { "codigo": "b", "min": 0, "max": 10 }], "mediciones": { "a": 5, "b": 5 }, "esperado": "CONFORME" },
+    { "nombre": "no conforme prevalece sobre sin dato", "cotas": [{ "codigo": "a", "min": 0, "max": 10 }, { "codigo": "b", "min": 0, "max": 10 }], "mediciones": { "a": 11 }, "esperado": "NO_CONFORME" },
+    { "nombre": "sin tolerancia prevalece sobre sin dato", "cotas": [{ "codigo": "a", "min": 0, "max": 10 }, { "codigo": "b", "min": null, "max": null }], "mediciones": {}, "esperado": "SIN_TOLERANCIA" },
+    { "nombre": "falta una medición", "cotas": [{ "codigo": "a", "min": 0, "max": 10 }, { "codigo": "b", "min": 0, "max": 10 }], "mediciones": { "a": 5 }, "esperado": "SIN_DATO" },
+    { "nombre": "solo registro no influye", "cotas": [{ "codigo": "a", "min": 0, "max": 10 }, { "codigo": "r", "registro": true, "nominal": 1, "min": null, "max": null }], "mediciones": { "a": 5, "r": 99 }, "esperado": "CONFORME" }
+  ]
+}

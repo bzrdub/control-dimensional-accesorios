@@ -1,0 +1,183 @@
+{
+ "schemaVersion": 4,
+ "demo": true,
+ "material": "HDPE",
+ "fusion": "SOCKET",
+ "fuente": "DATOS DEMO (ficticios)",
+ "accesorios": [
+  {
+   "codigo": 1,
+   "nombre": "Codo 45°"
+  },
+  {
+   "codigo": 2,
+   "nombre": "Codo 90°"
+  },
+  {
+   "codigo": 3,
+   "nombre": "Copla"
+  },
+  {
+   "codigo": 4,
+   "nombre": "Copla de Reducción (Socket - Tope)"
+  }
+ ],
+ "productos": [
+  {
+   "accesorio": 1,
+   "producto": "Codo 45°",
+   "pn": "PN-20",
+   "sdr": 9,
+   "dimension": "20[mm] x 20[mm]",
+   "referencia": "PN-20 SDR-9 20[mm] x 20[mm]",
+   "diametros": [
+    20,
+    20
+   ],
+   "codigo": null
+  },
+  {
+   "accesorio": 1,
+   "producto": "Codo 45°",
+   "pn": "PN-20",
+   "sdr": 9,
+   "dimension": "32[mm] x 32[mm]",
+   "referencia": "PN-20 SDR-9 32[mm] x 32[mm]",
+   "diametros": [
+    32,
+    32
+   ],
+   "codigo": null
+  },
+  {
+   "accesorio": 1,
+   "producto": "Codo 45°",
+   "pn": "PN-20",
+   "sdr": 9,
+   "dimension": "50[mm] x 50[mm]",
+   "referencia": "PN-20 SDR-9 50[mm] x 50[mm]",
+   "diametros": [
+    50,
+    50
+   ],
+   "codigo": null
+  },
+  {
+   "accesorio": 2,
+   "producto": "Codo 90°",
+   "pn": "PN-20",
+   "sdr": 9,
+   "dimension": "20[mm] x 20[mm]",
+   "referencia": "PN-20 SDR-9 20[mm] x 20[mm]",
+   "diametros": [
+    20,
+    20
+   ],
+   "codigo": null
+  },
+  {
+   "accesorio": 2,
+   "producto": "Codo 90°",
+   "pn": "PN-20",
+   "sdr": 9,
+   "dimension": "32[mm] x 32[mm]",
+   "referencia": "PN-20 SDR-9 32[mm] x 32[mm]",
+   "diametros": [
+    32,
+    32
+   ],
+   "codigo": null
+  },
+  {
+   "accesorio": 2,
+   "producto": "Codo 90°",
+   "pn": "PN-20",
+   "sdr": 9,
+   "dimension": "50[mm] x 50[mm]",
+   "referencia": "PN-20 SDR-9 50[mm] x 50[mm]",
+   "diametros": [
+    50,
+    50
+   ],
+   "codigo": null
+  },
+  {
+   "accesorio": 3,
+   "producto": "Copla",
+   "pn": "PN-20",
+   "sdr": 9,
+   "dimension": "20[mm] x 20[mm]",
+   "referencia": "PN-20 SDR-9 20[mm] x 20[mm]",
+   "diametros": [
+    20,
+    20
+   ],
+   "codigo": null
+  },
+  {
+   "accesorio": 3,
+   "producto": "Copla",
+   "pn": "PN-20",
+   "sdr": 9,
+   "dimension": "32[mm] x 32[mm]",
+   "referencia": "PN-20 SDR-9 32[mm] x 32[mm]",
+   "diametros": [
+    32,
+    32
+   ],
+   "codigo": null
+  },
+  {
+   "accesorio": 3,
+   "producto": "Copla",
+   "pn": "PN-20",
+   "sdr": 9,
+   "dimension": "50[mm] x 50[mm]",
+   "referencia": "PN-20 SDR-9 50[mm] x 50[mm]",
+   "diametros": [
+    50,
+    50
+   ],
+   "codigo": null
+  },
+  {
+   "accesorio": 4,
+   "producto": "Copla de Reducción (Socket - Tope)",
+   "pn": "PN-20",
+   "sdr": 9,
+   "dimension": "25[mm] x 20[mm]",
+   "referencia": "PN-20 SDR-9 25[mm] x 20[mm]",
+   "diametros": [
+    25,
+    20
+   ],
+   "codigo": null
+  },
+  {
+   "accesorio": 4,
+   "producto": "Copla de Reducción (Socket - Tope)",
+   "pn": "PN-20",
+   "sdr": 9,
+   "dimension": "32[mm] x 25[mm]",
+   "referencia": "PN-20 SDR-9 32[mm] x 25[mm]",
+   "diametros": [
+    32,
+    25
+   ],
+   "codigo": null
+  },
+  {
+   "accesorio": 4,
+   "producto": "Copla de Reducción (Socket - Tope)",
+   "pn": "PN-20",
+   "sdr": 9,
+   "dimension": "40[mm] x 32[mm]",
+   "referencia": "PN-20 SDR-9 40[mm] x 32[mm]",
+   "diametros": [
+    40,
+    32
+   ],
+   "codigo": null
+  }
+ ]
+}

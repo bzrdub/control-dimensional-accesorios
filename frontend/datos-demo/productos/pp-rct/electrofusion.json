@@ -1,0 +1,183 @@
+{
+ "schemaVersion": 4,
+ "demo": true,
+ "material": "PP-RCT",
+ "fusion": "ELECTROFUSION",
+ "fuente": "DATOS DEMO (ficticios)",
+ "accesorios": [
+  {
+   "codigo": 1,
+   "nombre": "Codo 45°"
+  },
+  {
+   "codigo": 2,
+   "nombre": "Codo 90°"
+  },
+  {
+   "codigo": 3,
+   "nombre": "Copla"
+  },
+  {
+   "codigo": 4,
+   "nombre": "Copla de Reducción"
+  }
+ ],
+ "productos": [
+  {
+   "accesorio": 1,
+   "producto": "Codo 45°",
+   "pn": "PN-20",
+   "sdr": null,
+   "dimension": "75[mm] x 75[mm]",
+   "referencia": "PN-20 75[mm] x 75[mm]",
+   "diametros": [
+    75,
+    75
+   ],
+   "codigo": null
+  },
+  {
+   "accesorio": 1,
+   "producto": "Codo 45°",
+   "pn": "PN-20",
+   "sdr": null,
+   "dimension": "110[mm] x 110[mm]",
+   "referencia": "PN-20 110[mm] x 110[mm]",
+   "diametros": [
+    110,
+    110
+   ],
+   "codigo": null
+  },
+  {
+   "accesorio": 1,
+   "producto": "Codo 45°",
+   "pn": "PN-16",
+   "sdr": null,
+   "dimension": "160[mm] x 160[mm]",
+   "referencia": "PN-16 160[mm] x 160[mm]",
+   "diametros": [
+    160,
+    160
+   ],
+   "codigo": null
+  },
+  {
+   "accesorio": 2,
+   "producto": "Codo 90°",
+   "pn": "PN-20",
+   "sdr": null,
+   "dimension": "75[mm] x 75[mm]",
+   "referencia": "PN-20 75[mm] x 75[mm]",
+   "diametros": [
+    75,
+    75
+   ],
+   "codigo": null
+  },
+  {
+   "accesorio": 2,
+   "producto": "Codo 90°",
+   "pn": "PN-20",
+   "sdr": null,
+   "dimension": "110[mm] x 110[mm]",
+   "referencia": "PN-20 110[mm] x 110[mm]",
+   "diametros": [
+    110,
+    110
+   ],
+   "codigo": null
+  },
+  {
+   "accesorio": 2,
+   "producto": "Codo 90°",
+   "pn": "PN-16",
+   "sdr": null,
+   "dimension": "160[mm] x 160[mm]",
+   "referencia": "PN-16 160[mm] x 160[mm]",
+   "diametros": [
+    160,
+    160
+   ],
+   "codigo": null
+  },
+  {
+   "accesorio": 3,
+   "producto": "Copla",
+   "pn": "PN-20",
+   "sdr": null,
+   "dimension": "20[mm] x 20[mm]",
+   "referencia": "PN-20 20[mm] x 20[mm]",
+   "diametros": [
+    20,
+    20
+   ],
+   "codigo": null
+  },
+  {
+   "accesorio": 3,
+   "producto": "Copla",
+   "pn": "PN-20",
+   "sdr": null,
+   "dimension": "50[mm] x 50[mm]",
+   "referencia": "PN-20 50[mm] x 50[mm]",
+   "diametros": [
+    50,
+    50
+   ],
+   "codigo": null
+  },
+  {
+   "accesorio": 3,
+   "producto": "Copla",
+   "pn": "PN-20",
+   "sdr": null,
+   "dimension": "110[mm] x 110[mm]",
+   "referencia": "PN-20 110[mm] x 110[mm]",
+   "diametros": [
+    110,
+    110
+   ],
+   "codigo": null
+  },
+  {
+   "accesorio": 4,
+   "producto": "Copla de Reducción",
+   "pn": "PN-20",
+   "sdr": null,
+   "dimension": "63[mm] x 32[mm]",
+   "referencia": "PN-20 63[mm] x 32[mm]",
+   "diametros": [
+    63,
+    32
+   ],
+   "codigo": null
+  },
+  {
+   "accesorio": 4,
+   "producto": "Copla de Reducción",
+   "pn": "PN-20",
+   "sdr": null,
+   "dimension": "110[mm] x 63[mm]",
+   "referencia": "PN-20 110[mm] x 63[mm]",
+   "diametros": [
+    110,
+    63
+   ],
+   "codigo": null
+  },
+  {
+   "accesorio": 4,
+   "producto": "Copla de Reducción",
+   "pn": "PN-16",
+   "sdr": null,
+   "dimension": "160[mm] x 90[mm]",
+   "referencia": "PN-16 160[mm] x 90[mm]",
+   "diametros": [
+    160,
+    90
+   ],
+   "codigo": null
+  }
+ ]
+}

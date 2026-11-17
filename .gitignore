@@ -1,0 +1,36 @@
+# ── Datos de la planta (propiedad de la empresa): NUNCA se versionan ─────────────
+# Planillas de control, matrices de tolerancias, código VBA, esquemas de norma y fotos.
+/CONTROL */
+/Matrices/
+*.xlsx
+*.xlsm
+*.xls
+# Datos extraídos de esas planillas (catálogo, tolerancias, imágenes, especificaciones).
+# En el repositorio se usan los datos DEMO ficticios de frontend/datos-demo/ (npm run datos:demo).
+/frontend/public/images/
+/frontend/src/data/generated/
+/compartido/generated/
+
+# ── Secretos, base de datos y entornos ───────────────────────────────────────────
+.env
+*.sqlite3
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+/backend/staticfiles/
+
+# ── Node / build ─────────────────────────────────────────────────────────────────
+node_modules/
+dist/
+*.log
+
+# ── Herramientas locales y del sistema ───────────────────────────────────────────
+/.claude/
+.claudeignore
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

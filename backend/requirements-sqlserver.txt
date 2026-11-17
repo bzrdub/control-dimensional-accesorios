@@ -1,0 +1,3 @@
+-r requirements.txt
+# Backend de SQL Server para Django. Requiere además el "ODBC Driver 18 for SQL Server" de Microsoft.
+mssql-django>=1.6
